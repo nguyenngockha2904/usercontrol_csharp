@@ -56,6 +56,7 @@
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(395, 20);
             this.txtTen.TabIndex = 1;
+            this.txtTen.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
             // txtNgheNghiep
             // 
@@ -63,6 +64,7 @@
             this.txtNgheNghiep.Name = "txtNgheNghiep";
             this.txtNgheNghiep.Size = new System.Drawing.Size(395, 20);
             this.txtNgheNghiep.TabIndex = 5;
+            this.txtNgheNghiep.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
             // lblNgheNghiep
             // 
@@ -112,6 +114,7 @@
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(395, 20);
             this.txtDiaChi.TabIndex = 11;
+            this.txtDiaChi.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
             // lblDiaChi
             // 

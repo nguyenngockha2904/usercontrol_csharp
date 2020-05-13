@@ -19,7 +19,21 @@ namespace UserControlDemo
         public event EventHandler btnThemClicked;
         public event EventHandler btnSuaClicked;
         public event EventHandler btnXoaClicked;
-
+        public Button BtnThem
+        {
+            get { return btnThem; }
+            set { btnThem= value; }
+        }
+        public Button BtnSua
+        {
+            get { return btnSua; }
+            set { btnSua = value; }
+        }
+        public Button BtnXoa
+        {
+            get { return btnXoa; }
+            set { btnXoa = value; }
+        }
         protected void btnThem_Click(object sender, EventArgs e)
         {
             btnThemClicked(sender, e);

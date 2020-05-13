@@ -38,14 +38,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.dgvInfomations = new System.Windows.Forms.DataGridView();
-            this.buttonControlMain = new UserControlDemo.ButtonControl();
-            this.infomationsMain = new UserControlDemo.InfomationsControl();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngheNghiep = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonControlMain = new UserControlDemo.ButtonControl();
+            this.infomationsMain = new UserControlDemo.InfomationsControl();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfomations)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +74,6 @@
             this.ngaySinh,
             this.gioiTinh,
             this.diaChi});
-            this.dgvInfomations.EnableHeadersVisualStyles = false;
             this.dgvInfomations.Location = new System.Drawing.Point(22, 223);
             this.dgvInfomations.MultiSelect = false;
             this.dgvInfomations.Name = "dgvInfomations";
@@ -93,26 +92,6 @@
             this.dgvInfomations.TabIndex = 2;
             this.dgvInfomations.TabStop = false;
             this.dgvInfomations.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfomations_CellClick);
-            // 
-            // buttonControlMain
-            // 
-            this.buttonControlMain.Location = new System.Drawing.Point(539, 36);
-            this.buttonControlMain.Name = "buttonControlMain";
-            this.buttonControlMain.Size = new System.Drawing.Size(110, 144);
-            this.buttonControlMain.TabIndex = 1;
-            this.buttonControlMain.Load += new System.EventHandler(this.buttonControlMain_Load);
-            // 
-            // infomationsMain
-            // 
-            this.infomationsMain.DiaChi = "";
-            this.infomationsMain.GioiTinh = "Nam";
-            this.infomationsMain.Location = new System.Drawing.Point(22, 24);
-            this.infomationsMain.Name = "infomationsMain";
-            this.infomationsMain.NgaySinh = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
-            this.infomationsMain.NgheNghiep = "";
-            this.infomationsMain.Size = new System.Drawing.Size(511, 184);
-            this.infomationsMain.TabIndex = 0;
-            this.infomationsMain.Ten = "";
             // 
             // id
             // 
@@ -172,6 +151,26 @@
             this.diaChi.HeaderText = "Địa Chỉ";
             this.diaChi.Name = "diaChi";
             this.diaChi.ReadOnly = true;
+            // 
+            // buttonControlMain
+            // 
+            this.buttonControlMain.Location = new System.Drawing.Point(539, 36);
+            this.buttonControlMain.Name = "buttonControlMain";
+            this.buttonControlMain.Size = new System.Drawing.Size(110, 144);
+            this.buttonControlMain.TabIndex = 1;
+            this.buttonControlMain.Load += new System.EventHandler(this.buttonControlMain_Load);
+            // 
+            // infomationsMain
+            // 
+            this.infomationsMain.DiaChi = "";
+            this.infomationsMain.GioiTinh = "Nam";
+            this.infomationsMain.Location = new System.Drawing.Point(22, 24);
+            this.infomationsMain.Name = "infomationsMain";
+            this.infomationsMain.NgaySinh = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
+            this.infomationsMain.NgheNghiep = "";
+            this.infomationsMain.Size = new System.Drawing.Size(511, 184);
+            this.infomationsMain.TabIndex = 0;
+            this.infomationsMain.Ten = "";
             // 
             // MainForm
             // 

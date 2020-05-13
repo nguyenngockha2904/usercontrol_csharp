@@ -16,7 +16,7 @@ namespace UserControlDemo
         {
             InitializeComponent();
         }
-
+        public event EventHandler textChange;
         private void Infomations_Load(object sender, EventArgs e)
         {
             cbGioiTinh.Items.Add("Nam");
@@ -47,6 +47,11 @@ namespace UserControlDemo
         {
             get { return txtDiaChi.Text; }
             set { txtDiaChi.Text = value; }
+        }
+
+        protected void txt_TextChanged(object sender, EventArgs e)
+        {
+            textChange(sender, e);
         }
     }
 }
