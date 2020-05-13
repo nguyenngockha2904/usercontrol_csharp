@@ -9,12 +9,26 @@ namespace UserControlDemo
 {
     public class Infomations
     {
+    
+        private int id;
         private string ten;
         private string ngheNghiep;
         private DateTime ngaySinh;
         private string gioiTinh;
         private string diaChi;
-
+        public Infomations() {
+        
+        }
+        public Infomations(int id,string ten , String ngheNghiep ,DateTime ngaySinh , String gioiTinh,String diaChi)
+        {
+            this.id = id;
+            this.ten = ten;
+            this.ngheNghiep = ngheNghiep;
+            this.ngaySinh = ngaySinh;
+            this.gioiTinh = gioiTinh;
+            this.diaChi = diaChi;
+        }
+        public int Id { get => id; set => id = value; }
         public string Ten { get => ten; set => ten = value; }
         public string NgheNghiep { get => ngheNghiep; set => ngheNghiep = value; }
         public DateTime NgaySinh { get => ngaySinh; set => ngaySinh = value; }
