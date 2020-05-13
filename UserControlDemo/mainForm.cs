@@ -86,6 +86,7 @@ namespace UserControlDemo
             Infomations foundpr1 = mainList.Find((Infomations k) => { return (k.Id == id); });           
                 mainList.Remove(foundpr1);
                 updateDgv();
+                xoaTrang();
             }
             
         }       
