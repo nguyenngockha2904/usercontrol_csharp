@@ -154,6 +154,7 @@
             // 
             // buttonControlMain
             // 
+            this.buttonControlMain.ForeColor = System.Drawing.Color.White;
             this.buttonControlMain.Location = new System.Drawing.Point(539, 36);
             this.buttonControlMain.Name = "buttonControlMain";
             this.buttonControlMain.Size = new System.Drawing.Size(110, 144);

@@ -18,18 +18,13 @@ namespace UserControlDemo
         int index;
         public MainForm()
         {
-         
-
             InitializeComponent();
-
-
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             dgvInfomations.AutoGenerateColumns = false;
-           
-            
+            buttonControlMain.BtnXoa.ForeColor = Color.White;
         }
 
         protected void buttonControlMain_Load(object sender, EventArgs e)
