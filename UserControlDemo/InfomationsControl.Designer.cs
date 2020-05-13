@@ -1,6 +1,6 @@
 ﻿namespace UserControlDemo
 {
-    partial class Infomations
+    partial class InfomationsControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -51,6 +51,7 @@
             // 
             // txtTen
             // 
+            this.txtTen.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.txtTen.Location = new System.Drawing.Point(96, 15);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(395, 20);
@@ -121,7 +122,7 @@
             this.lblDiaChi.TabIndex = 10;
             this.lblDiaChi.Text = "Địa chỉ:";
             // 
-            // Infomations
+            // InfomationsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,7 +136,7 @@
             this.Controls.Add(this.lblNgheNghiep);
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.lblTen);
-            this.Name = "Infomations";
+            this.Name = "InfomationsControl";
             this.Size = new System.Drawing.Size(511, 184);
             this.Load += new System.EventHandler(this.Infomations_Load);
             this.ResumeLayout(false);

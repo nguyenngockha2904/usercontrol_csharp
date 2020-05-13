@@ -10,3 +10,15 @@ D:\GitHub\usercontrol_csharp\UserControlDemo\UserControlDemo\obj\Debug\UserContr
 D:\GitHub\usercontrol_csharp\UserControlDemo\UserControlDemo\obj\Debug\UserControlDemo.exe
 D:\GitHub\usercontrol_csharp\UserControlDemo\UserControlDemo\obj\Debug\UserControlDemo.pdb
 D:\GitHub\usercontrol_csharp\UserControlDemo\UserControlDemo\obj\Debug\UserControlDemo.ButtonControl.resources
+D:\GitHub\usercontrol_csharp\UserControlDemo\bin\Debug\UserControlDemo.exe.config
+D:\GitHub\usercontrol_csharp\UserControlDemo\bin\Debug\UserControlDemo.exe
+D:\GitHub\usercontrol_csharp\UserControlDemo\bin\Debug\UserControlDemo.pdb
+D:\GitHub\usercontrol_csharp\UserControlDemo\obj\Debug\UserControlDemo.csprojAssemblyReference.cache
+D:\GitHub\usercontrol_csharp\UserControlDemo\obj\Debug\UserControlDemo.ButtonControl.resources
+D:\GitHub\usercontrol_csharp\UserControlDemo\obj\Debug\UserControlDemo.MainForm.resources
+D:\GitHub\usercontrol_csharp\UserControlDemo\obj\Debug\UserControlDemo.Properties.Resources.resources
+D:\GitHub\usercontrol_csharp\UserControlDemo\obj\Debug\UserControlDemo.csproj.GenerateResource.cache
+D:\GitHub\usercontrol_csharp\UserControlDemo\obj\Debug\UserControlDemo.csproj.CoreCompileInputs.cache
+D:\GitHub\usercontrol_csharp\UserControlDemo\obj\Debug\UserControlDemo.exe
+D:\GitHub\usercontrol_csharp\UserControlDemo\obj\Debug\UserControlDemo.pdb
+D:\GitHub\usercontrol_csharp\UserControlDemo\obj\Debug\UserControlDemo.InfomationsControl.resources

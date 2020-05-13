@@ -1,6 +1,6 @@
 ﻿namespace UserControlDemo
 {
-    partial class mainForm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,56 +28,139 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.infomations1 = new UserControlDemo.Infomations();
-            this.buttonControl1 = new UserControlDemo.ButtonControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.dgvInfomations = new System.Windows.Forms.DataGridView();
+            this.ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngheNghiep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonControlMain = new UserControlDemo.ButtonControl();
+            this.infomationsMain = new UserControlDemo.InfomationsControl();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInfomations)).BeginInit();
             this.SuspendLayout();
             // 
-            // infomations1
+            // dgvInfomations
             // 
-            this.infomations1.Location = new System.Drawing.Point(22, 24);
-            this.infomations1.Name = "infomations1";
-            this.infomations1.Size = new System.Drawing.Size(511, 184);
-            this.infomations1.TabIndex = 0;
+            this.dgvInfomations.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvInfomations.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInfomations.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvInfomations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInfomations.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ten,
+            this.ngheNghiep,
+            this.ngaySinh,
+            this.gioiTinh,
+            this.diaChi});
+            this.dgvInfomations.Location = new System.Drawing.Point(22, 223);
+            this.dgvInfomations.Name = "dgvInfomations";
+            this.dgvInfomations.RowHeadersVisible = false;
+            this.dgvInfomations.Size = new System.Drawing.Size(627, 312);
+            this.dgvInfomations.TabIndex = 2;
             // 
-            // buttonControl1
+            // ten
             // 
-            this.buttonControl1.Location = new System.Drawing.Point(539, 36);
-            this.buttonControl1.Name = "buttonControl1";
-            this.buttonControl1.Size = new System.Drawing.Size(110, 144);
-            this.buttonControl1.TabIndex = 1;
+            this.ten.DataPropertyName = "ten";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ten.DefaultCellStyle = dataGridViewCellStyle2;
+            this.ten.HeaderText = "Tên";
+            this.ten.Name = "ten";
             // 
-            // dataGridView1
+            // ngheNghiep
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 223);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(627, 312);
-            this.dataGridView1.TabIndex = 2;
+            this.ngheNghiep.DataPropertyName = "ngheNghiep";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ngheNghiep.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ngheNghiep.HeaderText = "Nghề Nghiệp";
+            this.ngheNghiep.Name = "ngheNghiep";
             // 
-            // mainForm
+            // ngaySinh
+            // 
+            this.ngaySinh.DataPropertyName = "ngaySinh";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ngaySinh.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ngaySinh.HeaderText = "Ngày Sinh";
+            this.ngaySinh.Name = "ngaySinh";
+            // 
+            // gioiTinh
+            // 
+            this.gioiTinh.DataPropertyName = "gioiTinh";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.gioiTinh.DefaultCellStyle = dataGridViewCellStyle5;
+            this.gioiTinh.HeaderText = "Giới Tính";
+            this.gioiTinh.Name = "gioiTinh";
+            // 
+            // diaChi
+            // 
+            this.diaChi.DataPropertyName = "diaChi";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.diaChi.DefaultCellStyle = dataGridViewCellStyle6;
+            this.diaChi.HeaderText = "Địa Chỉ";
+            this.diaChi.Name = "diaChi";
+            // 
+            // buttonControlMain
+            // 
+            this.buttonControlMain.Location = new System.Drawing.Point(539, 36);
+            this.buttonControlMain.Name = "buttonControlMain";
+            this.buttonControlMain.Size = new System.Drawing.Size(110, 144);
+            this.buttonControlMain.TabIndex = 1;
+            this.buttonControlMain.Load += new System.EventHandler(this.buttonControlMain_Load);
+            // 
+            // infomationsMain
+            // 
+            this.infomationsMain.DiaChi = "";
+            this.infomationsMain.GioiTinh = "Nam";
+            this.infomationsMain.Location = new System.Drawing.Point(22, 24);
+            this.infomationsMain.Name = "infomationsMain";
+            this.infomationsMain.NgaySinh = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
+            this.infomationsMain.NgheNghiep = "";
+            this.infomationsMain.Size = new System.Drawing.Size(511, 184);
+            this.infomationsMain.TabIndex = 0;
+            this.infomationsMain.Ten = "";
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(668, 550);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonControl1);
-            this.Controls.Add(this.infomations1);
-            this.Name = "mainForm";
+            this.ClientSize = new System.Drawing.Size(663, 546);
+            this.Controls.Add(this.dgvInfomations);
+            this.Controls.Add(this.buttonControlMain);
+            this.Controls.Add(this.infomationsMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin cá nhân";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInfomations)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Infomations infomations1;
-        private ButtonControl buttonControl1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private InfomationsControl infomationsMain;
+        private ButtonControl buttonControlMain;
+        private System.Windows.Forms.DataGridView dgvInfomations;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngheNghiep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChi;
     }
 }
 
