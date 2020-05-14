@@ -15,7 +15,7 @@ namespace UserControlDemo
     public partial class MainForm : Form
     {
         List<Infomations> mainList = new List<Infomations>();
-        int index;
+        int index, i = 1;
         public MainForm()
         {
             InitializeComponent();
@@ -29,14 +29,12 @@ namespace UserControlDemo
 
         protected void buttonControlMain_Load(object sender, EventArgs e)
         {
-            buttonControlMain.btnThemClicked += new EventHandler(them);
-            buttonControlMain.btnSuaClicked += new EventHandler(sua);
-            buttonControlMain.btnXoaClicked += new EventHandler(xoa);
-            infomationsMain.textChange += new EventHandler(txt_TextChanged);
-
-
+            buttonControlMain.btnThemClicked += them;
+            buttonControlMain.btnSuaClicked += sua;
+            buttonControlMain.btnXoaClicked += xoa;
+            infomationsMain.textChange += txt_TextChanged;
         }
-        int i=1;
+
         protected void them(object sender, EventArgs e)
         {
             Infomations newInfo = new Infomations();
@@ -50,6 +48,7 @@ namespace UserControlDemo
             updateDgv();
             xoaTrang();
         }
+
         public void xoaTrang()
         {
             infomationsMain.Ten="";
@@ -57,6 +56,7 @@ namespace UserControlDemo
             infomationsMain.NgheNghiep="";
             infomationsMain.DiaChi="";
         }
+
         private void updateDgv()
         {
             dgvInfomations.DataSource = null;
@@ -89,7 +89,8 @@ namespace UserControlDemo
                 xoaTrang();
             }
             
-        }       
+        }   
+        
         private void dgvInfomations_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             buttonControlMain.BtnSua.Enabled = true;
@@ -107,6 +108,7 @@ namespace UserControlDemo
             }
             
         }
+
         public bool kiemtra()
         {
             if (infomationsMain.Ten == "" ||
@@ -121,6 +123,7 @@ namespace UserControlDemo
                 return true;
             }
         }
+
         private void txt_TextChanged(object sender, EventArgs e)
         {
             if (kiemtra())

@@ -16,7 +16,12 @@ namespace UserControlDemo
         {
             InitializeComponent();
         }
-        public event EventHandler textChange;
+        // đại diện cho các hàm có kiểu TextChangedHandler (sender, e) -> (EventHandler)
+
+        public delegate void TextChangedHandler(object sender, EventArgs e);
+
+        public event TextChangedHandler textChange;
+
         private void Infomations_Load(object sender, EventArgs e)
         {
             cbGioiTinh.Items.Add("Nam");
@@ -49,9 +54,12 @@ namespace UserControlDemo
             set { txtDiaChi.Text = value; }
         }
 
-        protected void txt_TextChanged(object sender, EventArgs e)
+        protected virtual void txt_TextChanged(object sender, EventArgs e)
         {
-            textChange(sender, e);
+            if (this.textChange != null)
+            {
+                textChange(sender, e);
+            }
         }
     }
 }

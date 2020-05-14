@@ -16,9 +16,12 @@ namespace UserControlDemo
         {
             InitializeComponent();
         }
-        public event EventHandler btnThemClicked;
-        public event EventHandler btnSuaClicked;
-        public event EventHandler btnXoaClicked;
+        public delegate void ButtonClickedHandler(object sender, EventArgs e);
+
+        public event ButtonClickedHandler btnThemClicked;
+        public event ButtonClickedHandler btnSuaClicked;
+        public event ButtonClickedHandler btnXoaClicked;
+
         public Button BtnThem
         {
             get { return btnThem; }
@@ -36,17 +39,26 @@ namespace UserControlDemo
         }
         protected void btnThem_Click(object sender, EventArgs e)
         {
-            btnThemClicked(sender, e);
+            if (this.btnThemClicked != null)
+            {
+                btnThemClicked(sender, e);
+            }
         }
 
         protected void btnSua_Click(object sender, EventArgs e)
         {
-            btnSuaClicked(sender, e);
+            if (this.btnSuaClicked != null)
+            {
+                btnSuaClicked(sender, e);
+            }
         }
 
         protected void btnXoa_Click(object sender, EventArgs e)
         {
-            btnXoaClicked(sender, e);
+            if (this.btnXoaClicked != null)
+            {
+                btnXoaClicked(sender, e);
+            }
         }
     }
 }
