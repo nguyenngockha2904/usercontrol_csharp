@@ -38,14 +38,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.dgvInfomations = new System.Windows.Forms.DataGridView();
+            this.buttonControlMain = new UserControlDemo.ButtonControl();
+            this.infomationsMain = new UserControlDemo.InfomationsControl();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngheNghiep = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonControlMain = new UserControlDemo.ButtonControl();
-            this.infomationsMain = new UserControlDemo.InfomationsControl();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfomations)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +55,6 @@
             this.dgvInfomations.AllowUserToDeleteRows = false;
             this.dgvInfomations.AllowUserToResizeColumns = false;
             this.dgvInfomations.AllowUserToResizeRows = false;
-            this.dgvInfomations.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfomations.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dgvInfomations.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -88,74 +87,15 @@
             this.dgvInfomations.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvInfomations.RowHeadersVisible = false;
             this.dgvInfomations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfomations.Size = new System.Drawing.Size(627, 312);
+            this.dgvInfomations.Size = new System.Drawing.Size(813, 308);
             this.dgvInfomations.TabIndex = 2;
             this.dgvInfomations.TabStop = false;
             this.dgvInfomations.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfomations_CellClick);
             // 
-            // id
-            // 
-            this.id.DataPropertyName = "Id";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.id.DefaultCellStyle = dataGridViewCellStyle2;
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // ten
-            // 
-            this.ten.DataPropertyName = "Ten";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ten.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ten.FillWeight = 107.8173F;
-            this.ten.HeaderText = "Tên";
-            this.ten.Name = "ten";
-            this.ten.ReadOnly = true;
-            // 
-            // ngheNghiep
-            // 
-            this.ngheNghiep.DataPropertyName = "NgheNghiep";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ngheNghiep.DefaultCellStyle = dataGridViewCellStyle4;
-            this.ngheNghiep.FillWeight = 107.8173F;
-            this.ngheNghiep.HeaderText = "Nghề Nghiệp";
-            this.ngheNghiep.Name = "ngheNghiep";
-            this.ngheNghiep.ReadOnly = true;
-            // 
-            // ngaySinh
-            // 
-            this.ngaySinh.DataPropertyName = "NgaySinh";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ngaySinh.DefaultCellStyle = dataGridViewCellStyle5;
-            this.ngaySinh.FillWeight = 107.8173F;
-            this.ngaySinh.HeaderText = "Ngày Sinh";
-            this.ngaySinh.Name = "ngaySinh";
-            this.ngaySinh.ReadOnly = true;
-            // 
-            // gioiTinh
-            // 
-            this.gioiTinh.DataPropertyName = "GioiTinh";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.gioiTinh.DefaultCellStyle = dataGridViewCellStyle6;
-            this.gioiTinh.FillWeight = 107.8173F;
-            this.gioiTinh.HeaderText = "Giới Tính";
-            this.gioiTinh.Name = "gioiTinh";
-            this.gioiTinh.ReadOnly = true;
-            // 
-            // diaChi
-            // 
-            this.diaChi.DataPropertyName = "DiaChi";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.diaChi.DefaultCellStyle = dataGridViewCellStyle7;
-            this.diaChi.FillWeight = 107.8173F;
-            this.diaChi.HeaderText = "Địa Chỉ";
-            this.diaChi.Name = "diaChi";
-            this.diaChi.ReadOnly = true;
-            // 
             // buttonControlMain
             // 
             this.buttonControlMain.ForeColor = System.Drawing.Color.White;
-            this.buttonControlMain.Location = new System.Drawing.Point(539, 36);
+            this.buttonControlMain.Location = new System.Drawing.Point(725, 47);
             this.buttonControlMain.Name = "buttonControlMain";
             this.buttonControlMain.Size = new System.Drawing.Size(110, 144);
             this.buttonControlMain.TabIndex = 1;
@@ -169,16 +109,81 @@
             this.infomationsMain.Name = "infomationsMain";
             this.infomationsMain.NgaySinh = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
             this.infomationsMain.NgheNghiep = "";
-            this.infomationsMain.Size = new System.Drawing.Size(511, 184);
+            this.infomationsMain.Size = new System.Drawing.Size(697, 184);
             this.infomationsMain.TabIndex = 0;
             this.infomationsMain.Ten = "";
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "Id";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.id.DefaultCellStyle = dataGridViewCellStyle2;
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 50;
+            // 
+            // ten
+            // 
+            this.ten.DataPropertyName = "Ten";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ten.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ten.FillWeight = 107.8173F;
+            this.ten.HeaderText = "Tên";
+            this.ten.Name = "ten";
+            this.ten.ReadOnly = true;
+            this.ten.Width = 213;
+            // 
+            // ngheNghiep
+            // 
+            this.ngheNghiep.DataPropertyName = "NgheNghiep";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ngheNghiep.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ngheNghiep.FillWeight = 107.8173F;
+            this.ngheNghiep.HeaderText = "Nghề Nghiệp";
+            this.ngheNghiep.Name = "ngheNghiep";
+            this.ngheNghiep.ReadOnly = true;
+            this.ngheNghiep.Width = 137;
+            // 
+            // ngaySinh
+            // 
+            this.ngaySinh.DataPropertyName = "NgaySinh";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ngaySinh.DefaultCellStyle = dataGridViewCellStyle5;
+            this.ngaySinh.FillWeight = 107.8173F;
+            this.ngaySinh.HeaderText = "Ngày Sinh";
+            this.ngaySinh.Name = "ngaySinh";
+            this.ngaySinh.ReadOnly = true;
+            this.ngaySinh.Width = 137;
+            // 
+            // gioiTinh
+            // 
+            this.gioiTinh.DataPropertyName = "GioiTinh";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.gioiTinh.DefaultCellStyle = dataGridViewCellStyle6;
+            this.gioiTinh.FillWeight = 107.8173F;
+            this.gioiTinh.HeaderText = "Giới Tính";
+            this.gioiTinh.Name = "gioiTinh";
+            this.gioiTinh.ReadOnly = true;
+            this.gioiTinh.Width = 136;
+            // 
+            // diaChi
+            // 
+            this.diaChi.DataPropertyName = "DiaChi";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.diaChi.DefaultCellStyle = dataGridViewCellStyle7;
+            this.diaChi.FillWeight = 107.8173F;
+            this.diaChi.HeaderText = "Địa Chỉ";
+            this.diaChi.Name = "diaChi";
+            this.diaChi.ReadOnly = true;
+            this.diaChi.Width = 137;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(663, 546);
+            this.ClientSize = new System.Drawing.Size(847, 560);
             this.Controls.Add(this.dgvInfomations);
             this.Controls.Add(this.buttonControlMain);
             this.Controls.Add(this.infomationsMain);

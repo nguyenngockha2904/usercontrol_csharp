@@ -55,6 +55,9 @@ namespace UserControlDemo
             infomationsMain.NgaySinh=DateTime.Now;
             infomationsMain.NgheNghiep="";
             infomationsMain.DiaChi="";
+            buttonControlMain.BtnXoa.Enabled = false;
+            buttonControlMain.BtnThem.Enabled = false;
+            buttonControlMain.BtnSua.Enabled = false;
         }
 
         private void updateDgv()

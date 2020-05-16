@@ -51,10 +51,10 @@
             // 
             // txtTen
             // 
-            this.txtTen.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.txtTen.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTen.Location = new System.Drawing.Point(96, 15);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(395, 20);
+            this.txtTen.Size = new System.Drawing.Size(578, 20);
             this.txtTen.TabIndex = 1;
             this.txtTen.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
@@ -62,7 +62,7 @@
             // 
             this.txtNgheNghiep.Location = new System.Drawing.Point(96, 55);
             this.txtNgheNghiep.Name = "txtNgheNghiep";
-            this.txtNgheNghiep.Size = new System.Drawing.Size(395, 20);
+            this.txtNgheNghiep.Size = new System.Drawing.Size(578, 20);
             this.txtNgheNghiep.TabIndex = 5;
             this.txtNgheNghiep.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
@@ -88,13 +88,13 @@
             // 
             this.dtpNgaySinh.Location = new System.Drawing.Point(96, 98);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(197, 20);
+            this.dtpNgaySinh.Size = new System.Drawing.Size(250, 20);
             this.dtpNgaySinh.TabIndex = 7;
             // 
             // lblGioiTinh
             // 
             this.lblGioiTinh.AutoSize = true;
-            this.lblGioiTinh.Location = new System.Drawing.Point(315, 101);
+            this.lblGioiTinh.Location = new System.Drawing.Point(458, 103);
             this.lblGioiTinh.Name = "lblGioiTinh";
             this.lblGioiTinh.Size = new System.Drawing.Size(50, 13);
             this.lblGioiTinh.TabIndex = 8;
@@ -103,16 +103,16 @@
             // cbGioiTinh
             // 
             this.cbGioiTinh.FormattingEnabled = true;
-            this.cbGioiTinh.Location = new System.Drawing.Point(371, 96);
+            this.cbGioiTinh.Location = new System.Drawing.Point(514, 98);
             this.cbGioiTinh.Name = "cbGioiTinh";
-            this.cbGioiTinh.Size = new System.Drawing.Size(121, 21);
+            this.cbGioiTinh.Size = new System.Drawing.Size(160, 21);
             this.cbGioiTinh.TabIndex = 9;
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.Location = new System.Drawing.Point(96, 143);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(395, 20);
+            this.txtDiaChi.Size = new System.Drawing.Size(578, 20);
             this.txtDiaChi.TabIndex = 11;
             this.txtDiaChi.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
@@ -140,7 +140,7 @@
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.lblTen);
             this.Name = "InfomationsControl";
-            this.Size = new System.Drawing.Size(511, 184);
+            this.Size = new System.Drawing.Size(704, 185);
             this.Load += new System.EventHandler(this.Infomations_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
