@@ -16,48 +16,52 @@ namespace UserControlDemo
         {
             InitializeComponent();
         }
+
         public delegate void ButtonClickedHandler(object sender, EventArgs e);
 
-        public event ButtonClickedHandler btnThemClicked;
-        public event ButtonClickedHandler btnSuaClicked;
-        public event ButtonClickedHandler btnXoaClicked;
+        public event ButtonClickedHandler AddUser;
+        public event ButtonClickedHandler EditUser;
+        public event ButtonClickedHandler DeleteUser;
 
         public Button BtnThem
         {
             get { return btnThem; }
-            set { btnThem= value; }
+            set { btnThem = value; }
         }
+
         public Button BtnSua
         {
             get { return btnSua; }
             set { btnSua = value; }
         }
+
         public Button BtnXoa
         {
             get { return btnXoa; }
             set { btnXoa = value; }
         }
+
         protected void btnThem_Click(object sender, EventArgs e)
         {
-            if (this.btnThemClicked != null)
+            if (this.AddUser != null)
             {
-                btnThemClicked(sender, e);
+                AddUser(sender, e);
             }
         }
 
         protected void btnSua_Click(object sender, EventArgs e)
         {
-            if (this.btnSuaClicked != null)
+            if (this.EditUser != null)
             {
-                btnSuaClicked(sender, e);
+                EditUser(sender, e);
             }
         }
 
         protected void btnXoa_Click(object sender, EventArgs e)
         {
-            if (this.btnXoaClicked != null)
+            if (this.DeleteUser != null)
             {
-                btnXoaClicked(sender, e);
+                DeleteUser(sender, e);
             }
         }
     }

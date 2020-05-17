@@ -20,7 +20,7 @@ namespace UserControlDemo
 
         public delegate void TextChangedHandler(object sender, EventArgs e);
 
-        public event TextChangedHandler textChange;
+        public event TextChangedHandler TextChangedHanlder;
 
         private void Infomations_Load(object sender, EventArgs e)
         {
@@ -56,9 +56,9 @@ namespace UserControlDemo
 
         protected virtual void txt_TextChanged(object sender, EventArgs e)
         {
-            if (this.textChange != null)
+            if (this.TextChangedHanlder != null)
             {
-                textChange(sender, e);
+                TextChangedHanlder(sender, e);
             }
         }
     }

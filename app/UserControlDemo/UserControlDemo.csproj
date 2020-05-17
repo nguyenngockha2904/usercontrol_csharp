@@ -46,18 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ButtonControl.cs">
+    <Compile Include="LoginAgain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAgain.Designer.cs">
+      <DependentUpon>LoginAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ButtonControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ButtonControl.Designer.cs">
+    <Compile Include="UserControls\ButtonControl.Designer.cs">
       <DependentUpon>ButtonControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Infomations.cs" />
-    <Compile Include="InfomationsControl.cs">
+    <Compile Include="UserControls\InfomationsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="InfomationsControl.Designer.cs">
+    <Compile Include="UserControls\InfomationsControl.Designer.cs">
       <DependentUpon>InfomationsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LoginControl.Designer.cs">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -67,11 +85,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ButtonControl.resx">
+    <EmbeddedResource Include="LoginAgain.resx">
+      <DependentUpon>LoginAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ButtonControl.resx">
       <DependentUpon>ButtonControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InfomationsControl.resx">
+    <EmbeddedResource Include="UserControls\InfomationsControl.resx">
       <DependentUpon>InfomationsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LoginControl.resx">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

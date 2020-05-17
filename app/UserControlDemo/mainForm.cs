@@ -8,13 +8,12 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
 namespace UserControlDemo
 {
     public partial class MainForm : Form
     {
         List<Infomations> mainList = new List<Infomations>();
+        public static bool logged = false;
         int index, i = 1;
         public MainForm()
         {
@@ -29,13 +28,13 @@ namespace UserControlDemo
 
         protected void buttonControlMain_Load(object sender, EventArgs e)
         {
-            buttonControlMain.btnThemClicked += them;
-            buttonControlMain.btnSuaClicked += sua;
-            buttonControlMain.btnXoaClicked += xoa;
-            infomationsMain.textChange += txt_TextChanged;
+            buttonControlMain.AddUser += AddUser;
+            buttonControlMain.EditUser += EditUser;
+            buttonControlMain.DeleteUser += DeleteUser;
+            infomationsMain.TextChangedHanlder += TextChangedHanlder;
         }
 
-        protected void them(object sender, EventArgs e)
+        protected void AddUser(object sender, EventArgs e)
         {
             Infomations newInfo = new Infomations();
             newInfo.Id = i++;
@@ -66,7 +65,7 @@ namespace UserControlDemo
             dgvInfomations.DataSource = mainList;
         }
 
-        protected void sua(object sender, EventArgs e)
+        protected void EditUser(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(dgvInfomations.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
             Infomations foundpr1 = mainList.Find((Infomations k) => { return (k.Id == id); });
@@ -80,18 +79,27 @@ namespace UserControlDemo
             xoaTrang();
         }   
 
-        protected void xoa(object sender, EventArgs e)
+        protected void DeleteUser(object sender, EventArgs e)
         {
-            int count = dgvInfomations.Rows.Count;
-            if (count > 0)
+            if(logged)
             {
-                int id= Convert.ToInt32(dgvInfomations.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
-            Infomations foundpr1 = mainList.Find((Infomations k) => { return (k.Id == id); });           
-                mainList.Remove(foundpr1);
-                updateDgv();
-                xoaTrang();
+                int count = dgvInfomations.Rows.Count;
+                if (count > 0)
+                {
+                    int id = Convert.ToInt32(dgvInfomations.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
+                    Infomations foundpr1 = mainList.Find((Infomations k) => { return (k.Id == id); });
+                    mainList.Remove(foundpr1);
+                    updateDgv();
+                    xoaTrang();
+                }
             }
-            
+            else
+            {
+                MessageBox.Show("You must login again to delete users", "Login Validation",
+                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                LoginAgain loginAgain = new LoginAgain();
+                loginAgain.ShowDialog();
+            }
         }   
         
         private void dgvInfomations_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -127,7 +135,7 @@ namespace UserControlDemo
             }
         }
 
-        private void txt_TextChanged(object sender, EventArgs e)
+        private void TextChangedHanlder(object sender, EventArgs e)
         {
             if (kiemtra())
             {

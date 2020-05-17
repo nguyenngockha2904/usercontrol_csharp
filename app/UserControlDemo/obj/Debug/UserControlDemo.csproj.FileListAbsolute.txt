@@ -46,4 +46,6 @@ D:\GitHub\usercontrol_csharp\app\UserControlDemo\obj\Debug\UserControlDemo.cspro
 D:\GitHub\usercontrol_csharp\app\UserControlDemo\obj\Debug\UserControlDemo.csproj.CoreCompileInputs.cache
 D:\GitHub\usercontrol_csharp\app\UserControlDemo\obj\Debug\UserControlDemo.exe
 D:\GitHub\usercontrol_csharp\app\UserControlDemo\obj\Debug\UserControlDemo.pdb
-D:\GitHub\usercontrol_csharp\app\UserControlDemo\obj\Debug\UserControlDemo.UserControl1.resources
+D:\GitHub\usercontrol_csharp\app\UserControlDemo\obj\Debug\UserControlDemo.LoginControl.resources
+D:\GitHub\usercontrol_csharp\app\UserControlDemo\obj\Debug\UserControlDemo.LoginForm.resources
+D:\GitHub\usercontrol_csharp\app\UserControlDemo\obj\Debug\UserControlDemo.LoginAgain.resources
