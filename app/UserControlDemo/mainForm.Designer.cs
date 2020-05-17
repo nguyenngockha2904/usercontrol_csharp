@@ -45,7 +45,7 @@
             this.gioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonControlMain = new UserControlDemo.ButtonControl();
-            this.infomationsMain = new UserControlDemo.InfomationsControl();
+            this.infomationsControlMain = new UserControlDemo.InfomationsControl();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfomations)).BeginInit();
             this.SuspendLayout();
             // 
@@ -160,23 +160,23 @@
             // buttonControlMain
             // 
             this.buttonControlMain.ForeColor = System.Drawing.Color.White;
-            this.buttonControlMain.Location = new System.Drawing.Point(725, 47);
+            this.buttonControlMain.Location = new System.Drawing.Point(725, 49);
             this.buttonControlMain.Name = "buttonControlMain";
             this.buttonControlMain.Size = new System.Drawing.Size(110, 144);
             this.buttonControlMain.TabIndex = 1;
             this.buttonControlMain.Load += new System.EventHandler(this.buttonControlMain_Load);
             // 
-            // infomationsMain
+            // infomationsControlMain
             // 
-            this.infomationsMain.DiaChi = "";
-            this.infomationsMain.GioiTinh = "Nam";
-            this.infomationsMain.Location = new System.Drawing.Point(22, 24);
-            this.infomationsMain.Name = "infomationsMain";
-            this.infomationsMain.NgaySinh = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
-            this.infomationsMain.NgheNghiep = "";
-            this.infomationsMain.Size = new System.Drawing.Size(697, 184);
-            this.infomationsMain.TabIndex = 0;
-            this.infomationsMain.Ten = "";
+            this.infomationsControlMain.DiaChi = "";
+            this.infomationsControlMain.GioiTinh = "Nam";
+            this.infomationsControlMain.Location = new System.Drawing.Point(22, 31);
+            this.infomationsControlMain.Name = "infomationsControlMain";
+            this.infomationsControlMain.NgaySinh = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
+            this.infomationsControlMain.NgheNghiep = "";
+            this.infomationsControlMain.Size = new System.Drawing.Size(697, 184);
+            this.infomationsControlMain.TabIndex = 0;
+            this.infomationsControlMain.Ten = "";
             // 
             // MainForm
             // 
@@ -186,7 +186,7 @@
             this.ClientSize = new System.Drawing.Size(847, 560);
             this.Controls.Add(this.dgvInfomations);
             this.Controls.Add(this.buttonControlMain);
-            this.Controls.Add(this.infomationsMain);
+            this.Controls.Add(this.infomationsControlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -199,9 +199,6 @@
         }
 
         #endregion
-
-        private InfomationsControl infomationsMain;
-        private ButtonControl buttonControlMain;
         private System.Windows.Forms.DataGridView dgvInfomations;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn ten;
@@ -209,6 +206,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChi;
+        private ButtonControl buttonControlMain;
+        private InfomationsControl infomationsControlMain;
     }
 }
 

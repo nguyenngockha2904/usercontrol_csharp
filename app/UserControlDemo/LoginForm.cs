@@ -15,8 +15,8 @@ namespace UserControlDemo
         public LoginForm()
         {
             InitializeComponent();
-            loginControl.LoginFailed += this.LoginFailed;
-            loginControl.LoginSuccess += this.LoginSuccess;
+            loginControl.LoginFailed += LoginFailed;
+            loginControl.LoginSuccess += LoginSuccess;
         }
 
         // This Event is fired by the Login Validation User Control

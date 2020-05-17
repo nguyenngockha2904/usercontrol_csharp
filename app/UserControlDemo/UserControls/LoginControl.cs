@@ -134,5 +134,13 @@ namespace UserControlDemo
                 txtPassword.Text = value;
             }
         }
+
+        private void TextBoxKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogIn_Click(sender, e);
+            }
+        }
     }
 }
